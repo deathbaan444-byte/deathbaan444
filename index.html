@@ -1,47 +1,192 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Windows & Roblox 2009 Proposal</title>
-    <style>
-        body { font-family: Arial, sans-serif; background-color: #f0f0f0; color: #333; }
-        header, footer { text-align: center; padding: 10px; background-color: #333; color: #fff; }
-        .gallery { display: flex; justify-content: center; flex-wrap: wrap; }
-        .gallery img { margin: 5px; width: 200px; height: auto; }
-        .interactive { display: flex; justify-content: center; margin: 20px; }
-        button { padding: 10px 20px; font-size: 16px; }
-        audio { display: none; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi PC - Test Secreto</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background: #008080 url('https://media1.tenor.com/m/GpMqSriY2VgAAAAd/heart.gif') center/cover; /* Fondo Windows 98 clásico */
+      font-family: "MS Sans Serif", Arial, sans-serif;
+      font-size: 13px;
+      color: black;
+      overflow: hidden;
+      cursor: url('https://www.rw-designer.com/cursor-extern.php?id=111528'), auto; /* Cursor Windows 95 Arrow */
+    }
+    .window {
+      width: 640px;
+      margin: 40px auto;	
+      background: #c0c0c0;
+      border-top: 2px solid #dfdfdf;
+      border-left: 2px solid #dfdfdf;
+      border-right: 2px solid #808080;
+      border-bottom: 2px solid #808080;
+      box-shadow: 3px 3px 10px rgba(0,0,0,0.5);
+    }
+    .title-bar {
+      background: linear-gradient(to right, #000080, #1084d0);
+      color: white;
+      padding: 3px 8px;
+      font-weight: bold;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .title-buttons {
+      display: flex;
+      gap: 2px;
+    }
+    .title-btn {
+      width: 22px;
+      height: 20px;
+      background: #c0c0c0;
+      border-top: 2px solid #dfdfdf;
+      border-left: 2px solid #dfdfdf;
+      border-right: 2px solid #808080;
+      border-bottom: 2px solid #808080;
+      text-align: center;
+      line-height: 16px;
+      font-size: 12px;
+    }
+    .content {
+      padding: 15px;
+      background: #c0c0c0;
+    }
+    h1 {
+      margin: 5px 0 15px 0;
+      font-size: 18px;
+      text-align: center;
+    }
+    .question {
+      background: white;
+      border-top: 2px solid #dfdfdf;
+      border-left: 2px solid #dfdfdf;
+      border-right: 2px solid #808080;
+      border-bottom: 2px solid #808080;
+      padding: 12px;
+      margin-bottom: 15px;
+    }
+    button {
+      background: #c0c0c0;
+      border-top: 2px solid #dfdfdf;
+      border-left: 2px solid #dfdfdf;
+      border-right: 2px solid #808080;
+      border-bottom: 2px solid #808080;
+      padding: 8px 20px;
+      font-family: "MS Sans Serif", sans-serif;
+      margin: 10px 5px;
+      cursor: url('https://www.rw-designer.com/cursor-extern.php?id=111528'), auto;
+    }
+    button:active {
+      border-top: 2px solid #808080;
+      border-left: 2px solid #808080;
+      border-right: 2px solid #dfdfdf;
+      border-bottom: 2px solid #dfdfdf;
+    }
+    #result { font-weight: bold; min-height: 30px; margin: 15px 0; }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Windows and Roblox 2009 Proposal</h1>
-    </header>
-    <main>
-        <section>
-            <h2>Welcome to the Proposal!</h2>
-            <p>This proposal page is dedicated to the nostalgic experience of Windows 2009 and Roblox 2009.</p>
-            <button onclick="document.getElementById('bg-music').play();">Play Background Music</button>
-            <audio id="bg-music" loop>
-                <source src="music/background-music.mp3" type="audio/mpeg">
-                Your browser does not support the audio element.
-            </audio>
-        </section>
-        <section class="gallery">
-            <h2>Image Gallery</h2>
-            <img src="images/windows2009.jpg" alt="Windows 2009" />
-            <img src="images/roblox2009.jpg" alt="Roblox 2009" />
-            <img src="images/fun_game.jpg" alt="Fun Game" />
-            <img src="images/nostalgia.jpg" alt="Nostalgia" />
-        </section>
-        <section class="interactive">
-            <h2>Click the Button for a Surprise!</h2>
-            <button onclick="alert('Welcome to a world of nostalgia!');">Click Me!</button>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2026 Windows & Roblox Proposal</p>
-    </footer>
+
+  <div class="window">
+    <div class="title-bar">
+      <span> Test Secreto - Solo para mi Aranza Bañuelos</span>
+      <div class="title-buttons">
+        <div class="title-btn">_</div>
+        <div class="title-btn">□</div>
+        <div class="title-btn" style="color:red;">×</div>
+      </div>
+    </div>
+    <div class="content">
+      <h1>Test de amor para mi hermosa niña</h1>
+      <p style="text-align:center; color:#000080;">Responde todo correcto y desbloquearás la carta especial...</p>
+
+      <!-- Pregunta 1 -->
+      <div class="question">
+        <strong>1. ¿Cuál es mi color favorito?</strong><br><br>
+        <input type="radio" name="q1" value="a"> Negro<br>
+        <input type="radio" name="q1" value="b"> Rojo<br>
+        <input type="radio" name="q1" value="c"> Verde<br>
+		<input type="radio" name="q1" value="d"> Todas las anteriores
+      </div>
+
+      <!-- Pregunta 2 -->
+      <div class="question">
+        <strong>2. ¿Mi comida favorita?</strong><br><br>
+        <input type="radio" name="q2" value="a"> Enchiladas<br>
+        <input type="radio" name="q2" value="b"> Fetuccini Alfredo<br>
+        <input type="radio" name="q2" value="c"> Albóndigas<br>
+		<input type="radio" name="q2" value="d"> Hamburguesa
+      </div>
+	  
+	   <!-- Pregunta 3 -->
+      <div class="question">
+        <strong>2. ¿Mi persona favorita?</strong><br><br>
+        <input type="radio" name="q3" value="a"> Aranza<br>
+        <input type="radio" name="q3" value="b"> Aranza Bañuelos<br>
+        <input type="radio" name="q3" value="c"> Aranza Michelle Bañuelos<br>
+		<input type="radio" name="q3" value="d"> Todas las anteriores
+      </div>
+	  
+	   <!-- Pregunta 4 -->
+      <div class="question">
+        <strong>2. ¿Qué buscas conmigo?</strong><br><br>
+        <input type="radio" name="q4" value="a"> Nada serio<br>
+        <input type="radio" name="q4" value="b"> Una relación duradera<br>
+        <input type="radio" name="q4" value="c"> Nada, qué asco<br>
+		<input type="radio" name="q4" value="d"> Siento que quiero casarme contigo, desearía pasar el resto de mi vida contigo
+      </div>
+	  
+	   <!-- Pregunta 5 -->
+      <div class="question">
+        <strong>2. ¿Te comerías mi corazón?</strong><br><br>
+        <input type="radio" name="q5" value="a"> Dámelo ahora mismo<br>
+        <input type="radio" name="q5" value="b"> Por supuesto<br>
+        <input type="radio" name="q5" value="c"> No<br>
+		<input type="radio" name="q5" value="d"> Si
+      </div>
+
+      <!-- Agrega aquí las preguntas 3, 4 y 5 igual que arriba (con name="q3", "q4", "q5") -->
+
+      <div style="text-align:center;">
+        <button onclick="verificar()">¡Comprobar respuestas!</button>
+      </div>
+
+      <div id="result"></div>
+      <div id="unlock" style="display:none; text-align:center;">
+        <button onclick="irSegunda()"> DESBLOQUEADO → Abrir carta especial</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Cambia estas por tus respuestas reales (a, b o c)
+    const correctas = { q1: "d", q2: "b", q3: "d", q4: "d", q5: "a" };
+
+    function verificar() {
+      let aciertos = 0;
+      for (let i = 1; i <= 5; i++) {
+        const sel = document.querySelector(`input[name="q${i}"]:checked`);
+        if (sel && sel.value === correctas[`q${i}`]) aciertos++;
+      }
+
+      const result = document.getElementById('result');
+      const unlock = document.getElementById('unlock');
+
+      if (aciertos === 5) {
+        result.innerHTML = '<span style="color:green">¡Perfecto! 5/5, Eres la mejor, mi niña 💕</span>';
+        unlock.style.display = 'block';
+      } else {
+        result.innerHTML = `<span style="color:red">Solo ${aciertos}/5... ¡Inténtalo de nuevo!</span>`;
+      }
+    }
+
+    function irSegunda() {
+      window.location.href = "dedicatoria.html";
+    }
+  </script>
 </body>
 </html>

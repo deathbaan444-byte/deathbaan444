@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows & Roblox 2009 Proposal</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f0f0f0; color: #333; }
+        header, footer { text-align: center; padding: 10px; background-color: #333; color: #fff; }
+        .gallery { display: flex; justify-content: center; flex-wrap: wrap; }
+        .gallery img { margin: 5px; width: 200px; height: auto; }
+        .interactive { display: flex; justify-content: center; margin: 20px; }
+        button { padding: 10px 20px; font-size: 16px; }
+        audio { display: none; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Windows and Roblox 2009 Proposal</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Welcome to the Proposal!</h2>
+            <p>This proposal page is dedicated to the nostalgic experience of Windows 2009 and Roblox 2009.</p>
+            <button onclick="document.getElementById('bg-music').play();">Play Background Music</button>
+            <audio id="bg-music" loop>
+                <source src="music/background-music.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+        <section class="gallery">
+            <h2>Image Gallery</h2>
+            <img src="images/windows2009.jpg" alt="Windows 2009" />
+            <img src="images/roblox2009.jpg" alt="Roblox 2009" />
+            <img src="images/fun_game.jpg" alt="Fun Game" />
+            <img src="images/nostalgia.jpg" alt="Nostalgia" />
+        </section>
+        <section class="interactive">
+            <h2>Click the Button for a Surprise!</h2>
+            <button onclick="alert('Welcome to a world of nostalgia!');">Click Me!</button>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Windows & Roblox Proposal</p>
+    </footer>
+</body>
+</html>
